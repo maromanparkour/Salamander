@@ -1,0 +1,33 @@
+.buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1vw;
+  position: absolute;
+  position: fixed;
+  right: 3vw;
+  bottom: 2vw;
+}
+
+.buttons .btn {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .buttons .btn {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .buttons .btn {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+/*# sourceMappingURL=buttons.css.map */

@@ -14,24 +14,6 @@ aside {
   z-index: 1000;
 }
 
-@media screen and (max-width: 1100px) {
-  aside {
-    top: 8vh;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  aside {
-    top: 7vh;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  aside {
-    top: 7vh;
-  }
-}
-
 aside #container {
   display: -ms-grid;
   display: grid;

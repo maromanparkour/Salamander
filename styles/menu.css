@@ -20,6 +20,18 @@ aside {
   }
 }
 
+@media screen and (max-width: 900px) {
+  aside {
+    top: 7vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  aside {
+    top: 7vh;
+  }
+}
+
 aside #container {
   display: -ms-grid;
   display: grid;

@@ -54,6 +54,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   display: none;
+  z-index: 1000;
   -webkit-animation: animatezoomin 0.6s;
   animation: animatezoomin 0.6s;
 }

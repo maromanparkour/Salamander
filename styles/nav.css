@@ -48,7 +48,7 @@ nav {
 
 @media screen and (max-width: 900px) {
   nav {
-    height: 7vh;
+    height: 12vh;
   }
 }
 
@@ -89,7 +89,7 @@ nav .menu-button img {
 
 @media screen and (max-width: 900px) {
   nav .menu-button img {
-    width: 6vh;
+    width: 11vh;
   }
 }
 

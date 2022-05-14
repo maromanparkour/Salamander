@@ -40,19 +40,29 @@
         <img src="img/sala_profile_brand.png" alt="">
     </div>
 
+    <div class="search-modal" id="search-modal">
+        <h1>Search anything</h1>
+        <input type="text" placeholder="Search..." id="input">
+        <button onclick="searchIt()" id="sbutton">Search</button>
+    </div>
+
     <aside id="menu">
-        <span class="close" onclick="hideMenu()">&times;</span>
-        <h2 class="menu-caption">Menu</h2>
-        <a href="#salamander_intro" class="menu-link">Operating system</a>
-        <a href="#fire_intro" class="menu-link">Programming language</a>
-        <a href="#corporation_intro" class="menu-link">Corporation</a>
-        <a href="#contact" class="menu-link">Contact</a>
-        <a href="#map" class="menu-link">Map</a>
-        <a href="#info" class="menu-link">Info</a>
+        <div id="container">
+            <span class="close" onclick="hideMenu()">&times;</span>
+            <h2 class="menu-caption">Menu</h2>
+            <a href="#salamander_intro" class="menu-link">Operating system</a>
+            <a href="#fire_intro" class="menu-link">Programming language</a>
+            <a href="#corporation_intro" class="menu-link">Corporation</a>
+            <a href="#contact" class="menu-link">Contact</a>
+            <a href="#map" class="menu-link">Map</a>
+            <a href="#info" class="menu-link">Info</a>
+        </div>
     </aside>
 
     <div class="buttons">
-        <img src="img/up.png" alt="" class="btn" onclick="scrlUp()">
+        <img src="img/search-dark.png" alt="" class="btn" id="search" onclick="showSearch()">
+        <img src="img/darkmode.png" alt="" class="btn" id="mode" onclick="darkMode()">
+        <img src="img/up-dark.png" alt="" class="btn" id="up" onclick="scrlUp()">
     </div>
 
     <div id="salamander_intro">
@@ -234,7 +244,7 @@
 
     <div id="contact">
         <h1>Contact us!</h1>
-        <form action="">
+        <form action="" id="form">
             <label for="name">Name</label>
             <br>
             <input type="text" id="name" placeholder="Your name">
@@ -246,6 +256,7 @@
             <label for="subject">Subject</label>
             <br>
             <select name="" id="subject">
+                <option value="">--</option>
                 <option value="">Operating system</option>
                 <option value="">Programming language Fire</option>
                 <option value="">Web developing and hosting</option>
@@ -254,7 +265,7 @@
                 <option value="">Tutorials</option>
                 <option value="">Cryptocurrency</option>
                 <option value="">Application offer</option>
-                <option value="">Design</option>
+                <option value="">Design studio</option>
                 <option value="">Students program</option>
             </select>
             <br>
@@ -272,7 +283,8 @@
                 <h1>About this webpage</h1>
                 <pre>
                     Author: Marek Horňak
-                    Mail: marek.hornak@student.spseke.sk
+                    Mail: <a href="mailto:marek.hornak@student.spseke.sk">click here</a>
+                    Number: 0903 ??? ???
                     Class: 2.B
                     Schoolyear: 2021/2022
                     School: SPŠE Košice

@@ -12,6 +12,21 @@ body, html {
   scroll-behavior: smooth;
 }
 
+.dark-mode #salamander_intro {
+  background-color: #525252;
+  color: white;
+}
+
+.dark-mode #corporation_intro {
+  background-color: #525252;
+  color: white;
+}
+
+.dark-mode #contact #form {
+  background-color: #525252;
+  color: white;
+}
+
 nav {
   background-color: #202020;
   width: 100%;
@@ -31,12 +46,23 @@ nav {
   }
 }
 
+@media screen and (max-width: 900px) {
+  nav {
+    height: 7vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: 7vh;
+  }
+}
+
 nav .menu-text {
   font-size: 7vh;
   text-align: right;
   color: white;
   margin: 0;
-  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -58,6 +84,18 @@ nav .menu-button img {
 @media screen and (max-width: 1100px) {
   nav .menu-button img {
     width: 7vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .menu-button img {
+    width: 6vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav .menu-button img {
+    width: 6vh;
   }
 }
 /*# sourceMappingURL=nav.css.map */

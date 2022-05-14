@@ -32,6 +32,13 @@
             pre {
                 font-size: large;
                 font-family: calibri;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 1px;
+                    border-radius: 2px;
+                    background: linear-gradient(45deg, rgb(0, 255, 115), rgb(0, 132, 255));
+                }
             }
         }
         .links {

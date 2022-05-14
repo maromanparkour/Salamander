@@ -53,6 +53,14 @@
   font-family: calibri;
 }
 
+#info .informations .about pre a {
+  text-decoration: none;
+  color: black;
+  padding: 1px;
+  border-radius: 2px;
+  background: linear-gradient(45deg, #00ff73, #0084ff);
+}
+
 #info .informations .links pre {
   font-size: large;
   font-family: calibri;

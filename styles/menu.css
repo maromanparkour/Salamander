@@ -1,23 +1,17 @@
 aside {
   position: absolute;
-  top: 10vh;
-  left: 0vw;
+  top: 0;
+  left: 0;
   width: 0;
-  height: 91vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   margin: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  grid-gap: 0;
   padding: 0;
   padding-right: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: fixed;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 1100px) {
@@ -26,12 +20,23 @@ aside {
   }
 }
 
-aside .menu-caption {
+aside #container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  grid-gap: 0;
+  display: none;
+}
+
+aside #container .menu-caption {
   font-size: xx-large;
   color: white;
 }
 
-aside .close {
+aside #container .close {
   font-family: calibri;
   font-weight: bolder;
   font-size: xx-large;
@@ -43,11 +48,11 @@ aside .close {
   cursor: pointer;
 }
 
-aside .close:hover {
+aside #container .close:hover {
   color: red;
 }
 
-aside .menu-link {
+aside #container .menu-link {
   text-decoration: none;
   color: white;
   padding: 7px;
@@ -58,7 +63,7 @@ aside .menu-link {
   text-align: center;
 }
 
-aside .menu-link:hover {
+aside #container .menu-link:hover {
   border-left: 2px solid yellow;
   background-color: rgba(255, 255, 0, 0.4);
   color: black;

@@ -268,7 +268,7 @@
 
     <div id="contact">
         <h1>Contact us!</h1>
-        <form action="mailto:maromanparkour@gmail.com" id="form" method="post" enctype="text/plain">
+        <form action="" id="form">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" placeholder="Your name"><br>
             <label for="email">Email</label><br>

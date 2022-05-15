@@ -17,6 +17,7 @@
     <link rel="icon" href="salamander.ico">
     <script src="functions/menu.js"></script>
     <script src="https://raw.githubusercontent.com/emn178/js-sha3/master/build/sha3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta name="author" content="Marek Horňak">
     <meta name="keywords" content="Salamander, Fire, Company">
     <meta name="description" content="Intro web to Salamander corporation">
@@ -266,7 +267,7 @@
 
     <div id="contact">
         <h1>Contact us!</h1>
-        <form action="mailto:maromanparkour@gmail.com" id="form" method="post" enctype="text/plain">
+        <form action="" id="form" enctype="text/plain" method="post">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" placeholder="Your name"><br>
             <label for="email">Email</label><br>
@@ -287,7 +288,7 @@
             </select><br>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea><br>
-            <button type="submit">Send message</button>
+            <button onclick="sendMail()">Send message</button>
         </form>
     </div>
 
@@ -322,6 +323,14 @@
         </div>
         <p>Webdesign &copy; Marek Horňak</p>
     </footer>
+
+    <script>
+        function sendMail() {
+            $myform = $('#form');
+            $myform.prop ('action', 'mailto:marek.hornak@student.spseke.sk');
+            $myform.submit();
+        }
+    </script>
     
 </body>
 </html>

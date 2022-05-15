@@ -55,6 +55,14 @@ function searchIt() {
     document.getElementById("search-modal").style.display = "none";
 }
 
+function showLogin() {
+    document.getElementById("log-form").style.display = "block";
+}
+
+function hideLogin() {
+    document.getElementById("log-form").style.display = "none";
+}
+
 var input = document.getElementById("input");
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {

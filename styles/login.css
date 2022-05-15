@@ -13,6 +13,12 @@
   animation: animatezoomin 0.6s;
 }
 
+@media screen and (max-width: 750px) {
+  .login-form {
+    padding-top: 20vw;
+  }
+}
+
 .login-form .close-log {
   font-size: xx-large;
   font-weight: bold;

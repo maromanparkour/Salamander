@@ -9,6 +9,9 @@
     padding: 5vw;
     z-index: 1000;
     display: none;
+    @media screen and (max-width: 750px) {
+        padding-top: 20vw;
+    }
     .close-log {
         font-size: xx-large;
         font-weight: bold;

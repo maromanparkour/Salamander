@@ -27,6 +27,7 @@ function darkMode() {
     var mode = document.getElementById("mode");
     var search = document.getElementById("search");
     var up = document.getElementById("up");
+    var lock = document.getElementById("lock");
     document.body.classList.toggle("dark-mode");
     if (mode.src.match("light")) {
         mode.src = "img/darkmode.png";
@@ -44,6 +45,12 @@ function darkMode() {
         up.src = "img/up-dark.png";
     }else{
         up.src = "img/up-light.png";
+    }
+
+    if (lock.src.match("light")) {
+        lock.src = "img/lock-dark.png";
+    }else{
+        lock.src = "img/lock-light.png";
     }
 }
 

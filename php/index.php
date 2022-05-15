@@ -1,3 +1,5 @@
+<?php include 'mailSender.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,7 +268,7 @@
 
     <div id="contact">
         <h1>Contact us!</h1>
-        <form action="mailto:maromanparkour@gmail.com" id="form" method="post" enctype="text/plain">
+        <form action="" id="form">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" placeholder="Your name"><br>
             <label for="email">Email</label><br>
@@ -287,7 +289,9 @@
             </select><br>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea><br>
-            <button type="submit">Send message</button>
+            <p class="success"> <?php echo $success; ?> </p>
+            <p class="failure"> <?php echo $failure; ?> </p>
+            <button type="submit" name="submit" data-submit="Sending...">Send message</button>
         </form>
     </div>
 

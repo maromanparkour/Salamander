@@ -25,5 +25,13 @@
             background-color: rgb(221, 221, 221);
             border-radius: 2px;
         }
+        .success {
+            text-align: center;
+            color: green;
+        }
+        .failure {
+            text-align: center;
+            color: red;
+        }
     }
 }

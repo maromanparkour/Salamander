@@ -78,22 +78,25 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
+
+
 function login() {
     user = document.getElementById("user").value;
     pass = document.getElementById("pass").value;
     id = undefined;
-
+    alert("Username: " + user + "\nPassword: " + pass)
+/*
     let data = '{ "accounts" : ['
     '{"username":"Marek", "password":"TheBigBoss", "age":"16", "function":"CEO", "profile":"img/marek-profile.jpg", "company":"Salamander", "title":"img/marek-title.jpg"},'
     '{"username":"Jani", "password":"TheProgrammer", "age":"16", "function":"Programmer", "profile":"img/jani-profile.jpg", "company":"Fire The Fox", "title":"img/jani.title.jpg"},'
     '{"username":"Guest", "password":"SomeoneElse", "age":"***", "function":"Guest", "profile":"img/guest-profile.jpg", "company":"***", "title":"img/guest-title.jpg"} ]}';
 
     const accounts = JSON.parse(data);
-
+*/
     switch(user) {
         case 'Marek':
             id = 0;
-            if(pass == accounts[id].password) {
+            if(pass == "TheBigBoss") {
                 window.open("/logged.html");
             }else{
                 alert("Username or password is incorrect!");
@@ -102,7 +105,7 @@ function login() {
 
         case 'Jani':
             id = 1;
-            if(pass == accounts[id].password) {
+            if(pass == "TheProgrammer") {
                 window.open("/logged.html");
             }else{
                 alert("Username or password is incorrect!");
@@ -111,7 +114,7 @@ function login() {
 
         case 'Guest':
             id = 2;
-            if(pass == accounts[id].password) {
+            if(pass == "SomeoneElse") {
                 window.open("/logged.html");
             }else{
                 alert("Username or password is incorrect!");
@@ -121,7 +124,7 @@ function login() {
         default:
             alert("Username or password is incorrect!");
     }
-
+/*
     document.getElementById("username").innerHTML = accounts[id].username;
     document.getElementById("img-profile").src = accounts[id].profile;
     document.getElementById("img-title").src = accounts[id].title;
@@ -129,5 +132,5 @@ function login() {
     document.getElementById("password").innerHTML = accounts[id].password;
     document.getElementById("age").innerHTML = accounts[id].age;
     document.getElementById("function").innerHTML = accounts[id].function;
-    document.getElementById("company").innerHTML = accounts[id].company;
+    document.getElementById("company").innerHTML = accounts[id].company;*/
 }

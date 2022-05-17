@@ -77,3 +77,57 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("sbutton").click();
   }
 });
+
+function login() {
+    user = document.getElementById("user").value;
+    pass = document.getElementById("pass").value;
+    id = undefined;
+
+    let data = '{ "accounts" : ['
+    '{"username":"Marek", "password":"TheBigBoss", "age":"16", "function":"CEO", "profile":"img/marek-profile.jpg", "company":"Salamander", "title":"img/marek-title.jpg"},'
+    '{"username":"Jani", "password":"TheProgrammer", "age":"16", "function":"Programmer", "profile":"img/jani-profile.jpg", "company":"Fire The Fox", "title":"img/jani.title.jpg"},'
+    '{"username":"Guest", "password":"SomeoneElse", "age":"***", "function":"Guest", "profile":"img/guest-profile.jpg", "company":"***", "title":"img/guest-title.jpg"} ]}';
+
+    const accounts = JSON.parse(data);
+
+    switch(user) {
+        case 'Marek':
+            id = 0;
+            if(pass == accounts[id].password) {
+                window.open("/logged.html");
+            }else{
+                alert("Username or password is incorrect!");
+            }
+            break;
+
+        case 'Jani':
+            id = 1;
+            if(pass == accounts[id].password) {
+                window.open("/logged.html");
+            }else{
+                alert("Username or password is incorrect!");
+            }
+            break;
+
+        case 'Guest':
+            id = 2;
+            if(pass == accounts[id].password) {
+                window.open("/logged.html");
+            }else{
+                alert("Username or password is incorrect!");
+            }
+            break;
+
+        default:
+            alert("Username or password is incorrect!");
+    }
+
+    document.getElementById("username").innerHTML = accounts[id].username;
+    document.getElementById("img-profile").src = accounts[id].profile;
+    document.getElementById("img-title").src = accounts[id].title;
+    document.getElementById("usern").innerHTML = accounts[id].username;
+    document.getElementById("password").innerHTML = accounts[id].password;
+    document.getElementById("age").innerHTML = accounts[id].age;
+    document.getElementById("function").innerHTML = accounts[id].function;
+    document.getElementById("company").innerHTML = accounts[id].company;
+}

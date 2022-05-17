@@ -33,7 +33,6 @@
     </nav>
 
     <header id="header">
-        <!--<img src="img/salamander.png" alt="">-->
         <h1>Salamander corporation</h1>
         <p>IT solutions for better tomorrow</p>
     </header>
@@ -54,10 +53,10 @@
         <form action="">
             <img src="img/avatar.png" alt="">
             <label for="user">Username</label><br>
-            <input type="text" name="user"><br><br>
+            <input type="text" name="user" id="user" required><br><br>
             <label for="pass">Password</label><br>
-            <input type="text" name="pass"><br><br>
-            <button type="submit">Login</button><br>
+            <input type="password" name="pass" id="pass" required><br><br>
+            <button onclick="login()">Login</button><br>
             <input type="checkbox" name="remember">
             <label for="chbox">Remember me</label><br>
             <a href="">Forgot password?</a>
@@ -274,17 +273,17 @@
             <input type="text" id="email" name="email" placeholder="Your email"><br>
             <label for="subject">Subject</label><br>
             <select name="subject" id="subject">
-                <option value="">--</option>
-                <option value="">Operating system</option>
-                <option value="">Programming language Fire</option>
-                <option value="">Web developing and hosting</option>
-                <option value="">Cybersecurity</option>
-                <option value="">Frameworks</option>
-                <option value="">Tutorials</option>
-                <option value="">Cryptocurrency</option>
-                <option value="">Application offer</option>
-                <option value="">Design studio</option>
-                <option value="">Students program</option>
+                <option value="--">--</option>
+                <option value="Operating system">Operating system</option>
+                <option value="Programming language Fire">Programming language Fire</option>
+                <option value="Web developing and hosting">Web developing and hosting</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Frameworks">Frameworks</option>
+                <option value="Tutorials">Tutorials</option>
+                <option value="Cryptocurrency">Cryptocurrency</option>
+                <option value="Application offer">Application offer</option>
+                <option value="Design studio">Design studio</option>
+                <option value="Students program">Students program</option>
             </select><br>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea><br>
@@ -327,7 +326,7 @@
     <script>
         function sendMail() {
             $myform = $('#form');
-            $myform.prop ('action', 'mailto:marek.hornak@student.spseke.sk');
+            $myform.prop('action', 'mailto:marek.hornak@student.spseke.sk');
             $myform.submit();
         }
     </script>

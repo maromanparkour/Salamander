@@ -33,4 +33,14 @@
   background-color: #dddddd;
   border-radius: 2px;
 }
+
+#contact #form .success {
+  text-align: center;
+  color: green;
+}
+
+#contact #form .failure {
+  text-align: center;
+  color: red;
+}
 /*# sourceMappingURL=contact.css.map */

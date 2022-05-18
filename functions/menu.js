@@ -97,7 +97,7 @@ function login() {
         case 'Marek':
             id = 0;
             if(pass == "TheBigBoss") {
-                window.open("/logged.html");
+                window.open("https://maromanparkour.github.io/Salamander/logged.html");
             }else{
                 alert("Username or password is incorrect!");
             }
@@ -106,7 +106,7 @@ function login() {
         case 'Jani':
             id = 1;
             if(pass == "TheProgrammer") {
-                window.open("/logged.html");
+                window.open("https://maromanparkour.github.io/Salamander/logged.html");
             }else{
                 alert("Username or password is incorrect!");
             }
@@ -115,7 +115,7 @@ function login() {
         case 'Guest':
             id = 2;
             if(pass == "SomeoneElse") {
-                window.open("/logged.html");
+                window.open("https://maromanparkour.github.io/Salamander/logged.html");
             }else{
                 alert("Username or password is incorrect!");
             }

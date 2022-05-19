@@ -129,7 +129,7 @@ function login() {
     let id = undefined;
     alert("Username: " + user + "\nPassword: " + pass);
 
-    $.getJSON("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json", function(json) { accounts = json });
+    $.getJSON("https://maromanparkour.github.io/Salamander/accounts.json", function(json) { accounts = json });
 
     switch (user) {
         case 'Marek':

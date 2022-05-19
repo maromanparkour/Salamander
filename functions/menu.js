@@ -86,8 +86,6 @@ function login() {
     id = undefined;
     alert("Username: " + user + "\nPassword: " + pass);
 
-    let accounts = require("/accounts.json");
-
     switch(user) {
         case 'Marek':
             id = 0;

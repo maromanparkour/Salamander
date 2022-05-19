@@ -86,6 +86,8 @@ function login() {
     id = undefined;
     alert("Username: " + user + "\nPassword: " + pass);
 
+    let accounts = require("/accounts.json");
+
     switch(user) {
         case 'Marek':
             id = 0;
@@ -117,4 +119,13 @@ function login() {
         default:
             alert("Username or password is incorrect!");
     }
+
+    document.getElementById("username").innerHTML = accounts[id].username;
+    document.getElementById("img-profile").src = accounts[id].profile;
+    document.getElementById("img-title").src = accounts[id].title;
+    document.getElementById("usern").innerHTML = accounts[id].username;
+    document.getElementById("password").innerHTML = accounts[id].password;
+    document.getElementById("age").innerHTML = accounts[id].age;
+    document.getElementById("function").innerHTML = accounts[id].function;
+    document.getElementById("company").innerHTML = accounts[id].company;
 }

@@ -165,14 +165,14 @@ function login() {
     
     console.log(accounts);
     if (accounts[id] != null) {
-        document.getElementById("username").innerHTML = accounts[id].username;
-        document.getElementById("img-profile").src = accounts[id].profile;
-        document.getElementById("img-title").src = accounts[id].title;
-        document.getElementById("usern").innerHTML = accounts[id].username;
-        document.getElementById("password").innerHTML = accounts[id].password;
-        document.getElementById("age").innerHTML = accounts[id].age;
-        document.getElementById("function").innerHTML = accounts[id].function;
-        document.getElementById("company").innerHTML = accounts[id].company;
+        document.getElementById("username").innerHTML = accounts["accounts"][id].username;
+        document.getElementById("img-profile").src = accounts["accounts"][id].profile;
+        document.getElementById("img-title").src = accounts["accounts"][id].title;
+        document.getElementById("usern").innerHTML = accounts["accounts"][id].username;
+        document.getElementById("password").innerHTML = accounts["accounts"][id].password;
+        document.getElementById("age").innerHTML = accounts["accounts"][id].age;
+        document.getElementById("function").innerHTML = accounts["accounts"][id].function;
+        document.getElementById("company").innerHTML = accounts["accounts"][id].company;
     }
 
 }

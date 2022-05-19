@@ -1,5 +1,4 @@
 "use strict";
-document.head.innerHTML = "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js\"></script>";
 function showMenu() {
     let menu = document.getElementById("menu");
     let con = document.getElementById("container");

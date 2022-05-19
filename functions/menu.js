@@ -1,4 +1,7 @@
 "use strict";
+
+let accounts;
+
 function showMenu() {
     let menu = document.getElementById("menu");
     let con = document.getElementById("container");
@@ -126,19 +129,7 @@ function login() {
     let id = undefined;
     alert("Username: " + user + "\nPassword: " + pass);
 
-    const accounts = (function () {
-        var json = null;
-        $.ajax({
-            'async': false,
-            'global': false,
-            'url': `${window.location.href}/accounts.json`,
-            'dataType': "json",
-            'success': function (data) {
-                json = data;
-            }
-        });
-        return json;
-    })(); 
+    $.getJSON("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json", function(json) { accounts = json });
 
     switch (user) {
         case 'Marek':
@@ -172,6 +163,7 @@ function login() {
             alert("Username or password is incorrect!");
     }
     
+    console.log(accounts);
     if (accounts[id] != null) {
         document.getElementById("username").innerHTML = accounts[id].username;
         document.getElementById("img-profile").src = accounts[id].profile;

@@ -35,6 +35,8 @@
   #fire_intro .fire_cards .fire_card {
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
 }
 
@@ -42,6 +44,8 @@
   #fire_intro .fire_cards .fire_card {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
 }
 

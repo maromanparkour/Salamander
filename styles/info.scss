@@ -12,12 +12,14 @@
         grid-template-columns: repeat(3, auto);
         grid-gap: 1vw;
         justify-content: center;
-        img {
-            width: 8vw;
-            border-radius: 4vw;
-            @media screen and (max-width: 750px) {
-                width: 14vw;
-                border-radius: 7vw;
+        a {
+            img {
+                width: 5vw;
+                border-radius: 4vw;
+                @media screen and (max-width: 750px) {
+                    width: 14vw;
+                    border-radius: 7vw;
+                }
             }
         }
     }
@@ -37,7 +39,7 @@
                     color: black;
                     padding: 1px;
                     border-radius: 2px;
-                    background: linear-gradient(45deg, rgb(0, 255, 115), rgb(0, 132, 255));
+                    background: yellow;
                 }
             }
         }

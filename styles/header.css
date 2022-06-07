@@ -1,5 +1,5 @@
 #header {
-  background: linear-gradient(45deg, #00ff73, #0084ff);
+  background: linear-gradient(45deg, yellow, black);
   width: 100%;
   padding: 10%;
 }
@@ -135,7 +135,7 @@
 .search-modal button {
   width: 20%;
   padding: 1vw;
-  background: linear-gradient(45deg, #00ff73, #0084ff);
+  background: linear-gradient(45deg, yellow, black);
   border-radius: 2px;
   display: block;
   margin-right: auto;

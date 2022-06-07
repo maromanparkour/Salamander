@@ -42,19 +42,19 @@ nav {
 
 @media screen and (max-width: 1100px) {
   nav {
-    height: 8vh;
+    height: 9vh;
   }
 }
 
 @media screen and (max-width: 900px) {
   nav {
-    height: 12vh;
+    height: 11vh;
   }
 }
 
 @media screen and (max-width: 500px) {
   nav {
-    height: 7vh;
+    height: 8vh;
   }
 }
 
@@ -66,6 +66,18 @@ nav .menu-text {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1100px) {
+  nav .menu-text {
+    font-size: 7vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .menu-text {
+    font-size: 9vh;
+  }
+}
+
 @media screen and (max-width: 600px) {
   nav .menu-text {
     display: none;
@@ -73,29 +85,27 @@ nav .menu-text {
 }
 
 nav .menu-button {
-  height: 100%;
   cursor: pointer;
-}
-
-nav .menu-button img {
-  width: 9vh;
+  color: white;
+  font-size: 7vh;
+  margin: 0;
 }
 
 @media screen and (max-width: 1100px) {
-  nav .menu-button img {
-    width: 7vh;
+  nav .menu-button {
+    font-size: 5vh;
   }
 }
 
 @media screen and (max-width: 900px) {
-  nav .menu-button img {
-    width: 11vh;
+  nav .menu-button {
+    font-size: 7vh;
   }
 }
 
 @media screen and (max-width: 500px) {
-  nav .menu-button img {
-    width: 6vh;
+  nav .menu-button {
+    font-size: 4vh;
   }
 }
 /*# sourceMappingURL=nav.css.map */

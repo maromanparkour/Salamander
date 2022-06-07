@@ -1,7 +1,7 @@
 #contact {
   width: 100%;
   padding: 5vw;
-  background: linear-gradient(45deg, #00ff73, #0084ff);
+  background: linear-gradient(45deg, yellow, black);
 }
 
 #contact #form {
@@ -19,7 +19,7 @@
 }
 
 #contact #form button {
-  background: linear-gradient(45deg, #00ff73, #0084ff);
+  background: linear-gradient(45deg, yellow, black);
   border: 0;
   border-radius: 2px;
   padding: 1vw;

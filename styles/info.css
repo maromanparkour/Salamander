@@ -21,13 +21,13 @@
           justify-content: center;
 }
 
-#info .social-media img {
-  width: 8vw;
+#info .social-media a img {
+  width: 5vw;
   border-radius: 4vw;
 }
 
 @media screen and (max-width: 750px) {
-  #info .social-media img {
+  #info .social-media a img {
     width: 14vw;
     border-radius: 7vw;
   }
@@ -58,7 +58,7 @@
   color: black;
   padding: 1px;
   border-radius: 2px;
-  background: linear-gradient(45deg, #00ff73, #0084ff);
+  background: yellow;
 }
 
 #info .informations .links pre {

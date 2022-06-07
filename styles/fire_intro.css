@@ -23,11 +23,11 @@
 #fire_intro .fire_cards .fire_card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   grid-gap: 0;
   text-align: center;
-  background-color: #dadada;
+  background-color: #3f3f3f;
   color: black;
 }
 
@@ -47,6 +47,7 @@
 
 #fire_intro .fire_cards .fire_card .step {
   padding: 0.5vw;
+  background-color: #dadada;
 }
 
 #fire_intro .fire_cards .fire_card img {
